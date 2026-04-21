@@ -1,4 +1,1 @@
-# Journey to Be a Data Analyst in Finance
-
-
-고민!!!
+# 머신러닝을 활용한 데이터 분석 부트캠프 53기 연습 자료

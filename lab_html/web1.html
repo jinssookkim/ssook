@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- HTML 주석(comment)
+HTML 문서의 구조:
+    <tag attribute ="value" ...>content</tag>
+컨텐트를 갖지 않는 태그인 경우:
+    <tag attribute="value" .../> 또는
+    <tag attribute="value" ...>
+-->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Web 1</title>
+        <style>
+            /* CSS 문법으로 작성하는 부분 */
+            /* table, td, th {
+                border: 1px solid black; 
+                border-collapse: collapse;
+                padding: 16px;     padding: 안 쪽 여백, 바깥 쪽의 여백은 margin!! 
+            } */
+            td, th {
+                border-bottom: 1px solid black;
+                border-collapse: collapse;
+                padding: 8px;
+            }
+            th {
+                background-color: black;  /* 바탕색 */
+                color: white;  /* 글자색 */
+            }
+            /* tbody 하위 요소 중 tr 요소 위에 마우스가 올려졌을 때*/
+            tbody tr:hover {
+                background-color: lightslategray;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- h1 ~ h6: heading -->
+        <h1>처음 만드는 HTML</h1>
+        <h2>HTML(HyperText Markup Language)</h2>
+
+        <!-- a: anchor. 링크 생성 -->
+        <a href="https://www.daum.net">다음</a>
+        <br> <!-- line break: 줄바꿈-->
+        <a href="https://www.naver.com">네이버</a>
+        <br>
+        <a href="https://www.google.com">구글</a>
+
+        <!-- HTML 요소(element)
+        (1) block-level 요소: 브라우저의 가로 길이 전체를 차지하는 요소. 
+            줄바꿈이 자동으로 생성
+            <h1>, <h2>, <div>, <p>, <table>, <ul>, <li>, ...
+        (2) inline 요소: 컨텐츠의 가로 길이 만큼만 차지하는 요소
+            줄바꿈이 자동으로 생기지 않음
+            <a>, <span>, <img>, <strong>, <em>, ...
+        -->
+
+        <div>
+            여기는 division입니다.<br>
+            div는 <span>여백(margin)</span>을 갖지 않습니다.
+        </div>
+        <p>
+            여기는 <strong>paragraph</strong>입니다.<br>
+            p는 <em>여백</em>을 갖습니다.
+        </p>
+
+        <h1>HTML 리스트</h1>
+        <h2>순서가 없는 리스트(Unordered List)</h2>
+        <ul>
+            <!-- List Item -->
+            <li>Python</li>
+            <li>데이터 분석</li>
+            <li>머신러닝</li>
+        </ul>
+
+        <h2>순서가 있는 리스트(Ordered List)</h2>
+        <ol>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+        </ol>
+
+        <h3>사전식 리스트(Description List)</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Marker Language</dd>
+            <dd>웹 페이지의 정적 컨텐츠를 작성하는 마크업 언어</dd>
+
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheet</dd>
+            <dd>웹 페이지의 스타일(font, color, ...)을 작성하는 문법</dd>
+        </dl>
+
+        <h1>HTML 테이블</h1>
+        <table>
+            <!-- table header -->
+            <thead>
+                <tr> <!-- table row -->
+                    <th>No.</th>  <!-- table header cell(column) -->
+                    <th>이름</th>
+                    <th>전화번호</th>
+                    <th>이메일</th>
+                </tr>
+            </thead>
+            <tbody>  <!-- table body -->
+                <tr>
+                    <td>1.</td>  <!-- table data cell -->
+                    <td>오쌤</td>
+                    <td>010-1234-5678</td>
+                    <td>ohssam@naver.com</td>
+                </tr>
+                <tr>
+                    <td>2.</td>  <!-- table data cell -->
+                    <td>홍길동</td>
+                    <td>010-2545-3238</td>
+                    <td>gildong@naver.com</td>
+                </tr>
+                <tr>
+                    <td>3.</td>  <!-- table data cell -->
+                    <td>Scott</td>
+                    <td>010-2035-1937</td>
+                    <td>tiger@naver.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>

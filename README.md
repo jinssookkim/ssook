@@ -1,5 +1,4 @@
-# Journey to Be a Data Analyst in Financial Consumer Sector
+# Journey to Be a Data Analyst in Finance
 
 
-* Hello
-* ..
+고민!!!
